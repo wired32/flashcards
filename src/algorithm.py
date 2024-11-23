@@ -183,7 +183,6 @@ class Flashcards:
 
         ids = self.difficulty[difficulty]
 
-
         weights = [i['weight'] for n, i in self.userdata['data'].items()
                    if int(n) in ids
         ]
