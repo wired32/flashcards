@@ -1,0 +1,527 @@
+[
+    {
+        "kana": "\u3042",
+        "roumaji": "a",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3044",
+        "roumaji": "i",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3046",
+        "roumaji": "u",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3048",
+        "roumaji": "e",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u304a",
+        "roumaji": "o",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u304b",
+        "roumaji": "ka",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u304d",
+        "roumaji": "ki",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u304f",
+        "roumaji": "ku",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3051",
+        "roumaji": "ke",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3053",
+        "roumaji": "ko",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3055",
+        "roumaji": "sa",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3057",
+        "roumaji": "shi",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3059",
+        "roumaji": "su",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u305b",
+        "roumaji": "se",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u305d",
+        "roumaji": "so",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u305f",
+        "roumaji": "ta",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3061",
+        "roumaji": "chi",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3064",
+        "roumaji": "tsu",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3066",
+        "roumaji": "te",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3068",
+        "roumaji": "to",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u306a",
+        "roumaji": "na",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u306b",
+        "roumaji": "ni",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u306c",
+        "roumaji": "nu",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u306d",
+        "roumaji": "ne",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u306e",
+        "roumaji": "no",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u306f",
+        "roumaji": "ha",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3072",
+        "roumaji": "hi",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3075",
+        "roumaji": "fu",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3078",
+        "roumaji": "he",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u307b",
+        "roumaji": "ho",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u307e",
+        "roumaji": "ma",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u307f",
+        "roumaji": "mi",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3080",
+        "roumaji": "mu",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3081",
+        "roumaji": "me",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3082",
+        "roumaji": "mo",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3084",
+        "roumaji": "ya",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3086",
+        "roumaji": "yu",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3088",
+        "roumaji": "yo",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3089",
+        "roumaji": "ra",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u308a",
+        "roumaji": "ri",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u308b",
+        "roumaji": "ru",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u308c",
+        "roumaji": "re",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u308d",
+        "roumaji": "ro",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u308f",
+        "roumaji": "wa",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3092",
+        "roumaji": "wo",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u3093",
+        "roumaji": "n",
+        "type": "gojuuon"
+    },
+    {
+        "kana": "\u304c",
+        "roumaji": "ga",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u304e",
+        "roumaji": "gi",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3050",
+        "roumaji": "gu",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3052",
+        "roumaji": "ge",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3054",
+        "roumaji": "go",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3056",
+        "roumaji": "za",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3058",
+        "roumaji": "ji",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u305a",
+        "roumaji": "zu",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u305c",
+        "roumaji": "ze",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u305e",
+        "roumaji": "zo",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3060",
+        "roumaji": "da",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3062",
+        "roumaji": "ji",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3065",
+        "roumaji": "zu",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3067",
+        "roumaji": "de",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3069",
+        "roumaji": "do",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3070",
+        "roumaji": "ba",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3073",
+        "roumaji": "bi",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3076",
+        "roumaji": "bu",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3079",
+        "roumaji": "be",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u307c",
+        "roumaji": "bo",
+        "type": "dakuon"
+    },
+    {
+        "kana": "\u3071",
+        "roumaji": "pa",
+        "type": "handakuon"
+    },
+    {
+        "kana": "\u3074",
+        "roumaji": "pi",
+        "type": "handakuon"
+    },
+    {
+        "kana": "\u3077",
+        "roumaji": "pu",
+        "type": "handakuon"
+    },
+    {
+        "kana": "\u307a",
+        "roumaji": "pe",
+        "type": "handakuon"
+    },
+    {
+        "kana": "\u307d",
+        "roumaji": "po",
+        "type": "handakuon"
+    },
+    {
+        "kana": "\u3063",
+        "roumaji": "(pause)",
+        "type": "sokuon"
+    },
+    {
+        "kana": "\u304d\u3083",
+        "roumaji": "kya",
+        "type": "youon"
+    },
+    {
+        "kana": "\u304d\u3085",
+        "roumaji": "kyu",
+        "type": "youon"
+    },
+    {
+        "kana": "\u304d\u3087",
+        "roumaji": "kyo",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3057\u3083",
+        "roumaji": "sha",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3057\u3085",
+        "roumaji": "shu",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3057\u3087",
+        "roumaji": "sho",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3061\u3083",
+        "roumaji": "cha",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3061\u3085",
+        "roumaji": "chu",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3061\u3087",
+        "roumaji": "cho",
+        "type": "youon"
+    },
+    {
+        "kana": "\u306b\u3083",
+        "roumaji": "nya",
+        "type": "youon"
+    },
+    {
+        "kana": "\u306b\u3085",
+        "roumaji": "nyu",
+        "type": "youon"
+    },
+    {
+        "kana": "\u306b\u3087",
+        "roumaji": "nyo",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3072\u3083",
+        "roumaji": "hya",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3072\u3085",
+        "roumaji": "hyu",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3072\u3087",
+        "roumaji": "hyo",
+        "type": "youon"
+    },
+    {
+        "kana": "\u307f\u3083",
+        "roumaji": "mya",
+        "type": "youon"
+    },
+    {
+        "kana": "\u307f\u3085",
+        "roumaji": "myu",
+        "type": "youon"
+    },
+    {
+        "kana": "\u307f\u3087",
+        "roumaji": "myo",
+        "type": "youon"
+    },
+    {
+        "kana": "\u308a\u3083",
+        "roumaji": "rya",
+        "type": "youon"
+    },
+    {
+        "kana": "\u308a\u3085",
+        "roumaji": "ryu",
+        "type": "youon"
+    },
+    {
+        "kana": "\u308a\u3087",
+        "roumaji": "ryo",
+        "type": "youon"
+    },
+    {
+        "kana": "\u304e\u3083",
+        "roumaji": "gya",
+        "type": "youon"
+    },
+    {
+        "kana": "\u304e\u3085",
+        "roumaji": "gyu",
+        "type": "youon"
+    },
+    {
+        "kana": "\u304e\u3087",
+        "roumaji": "gyo",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3058\u3083",
+        "roumaji": "ja",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3058\u3085",
+        "roumaji": "ju",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3058\u3087",
+        "roumaji": "jo",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3073\u3083",
+        "roumaji": "bya",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3073\u3085",
+        "roumaji": "byu",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3073\u3087",
+        "roumaji": "byo",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3074\u3083",
+        "roumaji": "pya",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3074\u3085",
+        "roumaji": "pyu",
+        "type": "youon"
+    },
+    {
+        "kana": "\u3074\u3087",
+        "roumaji": "pyo",
+        "type": "youon"
+    }
+]
