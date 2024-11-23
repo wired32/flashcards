@@ -4,6 +4,7 @@ import os
 import requests
 import logging
 import random
+from pathlib import Path
 
 logging.basicConfig(level=logging.INFO)
 
@@ -14,6 +15,20 @@ class Flashcards:
 
         self.last = None
         self.streak = 0
+        self.difficulty = {         
+            1: [
+                i for i, h in enumerate(self.hiragana)
+                if h['type'] == 'gojuuon' and i != self.last
+            ],
+            2: [
+                i for i, h in enumerate(self.hiragana)
+                if h['type'] in ['gojuuon', 'dakuon'] and i != self.last
+            ],
+            3: [
+                i for i in range(len(self.hiragana))
+                if i != self.last
+            ]
+        }
         
     def _load_data(self, file_path, fallback_method):
         """
@@ -31,6 +46,24 @@ class Flashcards:
                 return fallback_method()
         else:
             return fallback_method()
+        
+    def download(self, path: Path):
+        logging.info("Fetching hiragana data from remote source...")
+
+        response = requests.get(
+                'https://raw.githubusercontent.com/wired32/flashcards/refs/heads/main/data/hiragana.json'
+            )
+        response.encoding = 'utf-8'
+        response.raise_for_status()
+
+        hiragana_data = response.json()
+
+        with open(path / 'hiragana.json', 'w', encoding='utf-8') as f:
+                json.dump(hiragana_data, f, indent=4)
+
+        logging.info("Successfully fetched and saved hiragana data.")
+
+        return response.json()
     
     def _fetch_hiragana_data(self):
         """
@@ -41,20 +74,9 @@ class Flashcards:
         if not os.path.exists(data_dir):
             os.makedirs(data_dir)
 
-        logging.info("Fetching hiragana data from remote source...")
         try:
-            response = requests.get(
-                'https://gist.githubusercontent.com/mdzhang/899a427eb3d0181cd762/raw/0d0f60f08ae58a927b7ac5e0a872acdce88ec441/hiragana.json'
-            )
-            response.encoding = 'utf-8'
-            response.raise_for_status()
-            hiragana_data = response.json()
-
-            # save the fetched data locally
-            with open(os.path.join(data_dir, 'hiragana.json'), 'w', encoding='utf-8') as f:
-                json.dump(hiragana_data, f, indent=4)
-                
-            logging.info("Successfully fetched and saved hiragana data.")
+            hiragana_data = self.download(Path(data_dir))
+            
             return hiragana_data
         
         except requests.exceptions.RequestException as e:
@@ -159,21 +181,7 @@ class Flashcards:
         if difficulty > 3 or difficulty < 1:
             raise Exception("Difficulty must be between 1 and 3.")
 
-        if difficulty == 1:
-            ids = [
-                i for i, h in enumerate(self.hiragana)
-                if h['type'] == 'gojuuon' and i != self.last
-            ]
-        elif difficulty == 2:
-            ids = [
-                i for i, h in enumerate(self.hiragana)
-                if h['type'] in ['gojuuon', 'dakuon'] and i != self.last
-            ]
-        elif difficulty == 3:
-            ids = [
-                i for i in range(len(self.hiragana))
-                if i != self.last
-            ]
+        ids = self.difficulty[difficulty]
 
 
         weights = [i['weight'] for n, i in self.userdata['data'].items()
@@ -190,7 +198,7 @@ class Flashcards:
         while True:
             answer = input("Character: " + card['kana'] + "\nRoumaji: ")
             if answer.lower().strip() == card['roumaji']:
-                print("Correct!\n")
+                print("Correct! Press Enter to continue...\n")
 
                 self.userdata['data'][id]['timesPracticed'] += 1
                 self.userdata['data'][id]['corrects']['alltime'] += 1
@@ -204,7 +212,8 @@ class Flashcards:
 
                 break
             if answer.lower().split()[0] == 'skip':
-                print(f"Skipped! The character was {card['roumaji']}\n")
+                input(f"Skipped! The character was {card['roumaji']}! Press Enter to continue...")
+                print()
 
                 self.userdata['data'][id]['mistakes']['alltime'] += 1
 
