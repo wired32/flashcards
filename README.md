@@ -92,7 +92,7 @@ The user data (`userdata.json`) tracks:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-- [mdzhang](https://gist.githubusercontent.com/mdzhang/899a427eb3d0181cd762/raw/0d0f60f08ae58a927b7ac5e0a872acdce88ec441/hiragana.json) for the original hiragana data.
+- [mdzhang](https://github.com/mdzhang) for the original hiragana data.
 
 ---
 
