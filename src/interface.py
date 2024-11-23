@@ -40,6 +40,8 @@ def main() -> None:
             for id in hira.difficulty[difficulty]
         }
 
+        table = dict(sorted(table.items(), key=lambda item: item[1], reverse=True))
+
         base = 0
         c_column = 0
         last = 1

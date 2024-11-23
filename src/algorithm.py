@@ -90,7 +90,7 @@ class Flashcards:
         if not self.hiragana:
             raise Exception("Cannot initialize userdata without hiragana data.")
 
-        userdata = {'data': {}}
+        userdata = {'record': 0, 'data': {}}
         for id, hira in enumerate(self.hiragana):
             userdata['data'][str(id)] = {
                 "weight": 1,
@@ -197,9 +197,11 @@ class Flashcards:
 
         while True:
             answer = input("Character: " + card['kana'] + "\nRoumaji: ")
-            if answer.lower().strip() == card['roumaji']:
-                print("Correct! Press Enter to continue...\n")
 
+            if not answer:
+                continue
+
+            if answer.lower().strip() == card['roumaji']:
                 self.userdata['data'][id]['timesPracticed'] += 1
                 self.userdata['data'][id]['corrects']['alltime'] += 1
 
@@ -211,7 +213,7 @@ class Flashcards:
                 self.streak += 1
 
                 break
-            if answer.lower().split()[0] == 'skip':
+            if answer.lower() == 'skip':
                 input(f"Skipped! The character was {card['roumaji']}! Press Enter to continue...")
                 print()
 
@@ -224,6 +226,14 @@ class Flashcards:
 
                 if self.streak > 0:
                     print(f"Streak reset! {self.streak} consecutive correct answers.\n")
+
+                    if self.streak > self.userdata['record']:
+                        print(f"(NEW RECORD!) You reached {self.streak} consecutive correct answers!\n")
+                        self.userdata['record'] = self.streak
+                        self.save()
+                    else:
+                        print(f"Streak reset! {self.streak} consecutive correct answers.\n")
+
                     self.streak = 0
 
                 break
@@ -234,7 +244,12 @@ class Flashcards:
             self.userdata['data'][id]['weight'] += learning_rate # add weight
 
             if self.streak > 0:
-                print(f"Streak reset! {self.streak} consecutive correct answers.\n")
+                if self.streak > self.userdata['record']:
+                    print(f"(NEW RECORD!) You reached {self.streak} consecutive correct answers!\n")
+                    self.userdata['record'] = self.streak
+                    self.save()
+                else:
+                    print(f"Streak reset! {self.streak} consecutive correct answers.\n")
                 self.streak = 0
 
         self.userdata['data'][id]['lastPractice'] = time.time() # register last character practice
